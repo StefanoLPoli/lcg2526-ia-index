@@ -50,6 +50,14 @@ function draw() {
   yRocket = muoviRazzo(1, yRocket);
 }
 
+function mousePressed(){
+  if(isLooping()){
+    noLoop();
+  } else {
+    loop();
+  }
+}
+
 function stelleRandom(numeroStelle=120) //se non viene passato nessun parametro, disegnerà 120 stelle
 {
   //disegnare le stelle
